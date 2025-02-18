@@ -1,0 +1,163 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff69b4; /* hot pink */
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.file-upload-container {
+    margin: 80px 0 20px 0; /* Adjusted for fixed title */
+    text-align: center;
+}
+
+.file-label {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: #ff69b4; /* hot pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: #ff1493; /* deeper pink */
+}
+
+.file-upload-container input[type="file"] {
+    display: none;
+}
+
+.battle-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    flex: 1;
+}
+
+.hero-selector {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+    height: 300px; /* Fixed height */
+    
+}
+
+.hero-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff69b4; /* hot pink */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.hero-stats {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.battle-result {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.probability-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.probability-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.probability-fill {
+    background: #ff69b4; /* hot pink */
+    height: 100%;
+    width: 50%; /* This will be dynamically adjusted */
+    transition: width 0.3s ease;
+}
+
+.calculation-info {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.calculation-info h3 {
+    font-size: 1.5em;
+    color: #ff69b4; /* hot pink */
+    margin-bottom: 10px;
+}
+
+.calculation-info p, .calculation-info ul {
+    font-size: 1em;
+    color: #333;
+}
+
+.calculation-info ul {
+    padding-left: 20px;
+}
+
+.calculation-info li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
